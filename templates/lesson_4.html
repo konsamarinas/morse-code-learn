@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+  {% block title %}Lesson 4 - The Numbers{% endblock title %}
+
+{% block content %}
+
+<br>
+
+    <h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;"><u>Lesson 4</u></h1>
+    <br>
+
+<div style="padding-left: 5%; padding-right: 5%;">
+    <h6>Your progress:  50%</h6>
+    <div class="progress" >
+     <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+    </div>
+
+ 
+    <hr>
+  <ul class="pagination justify-content-center" >
+    <li class="page-item" >
+      <a class="page-link" href="/exercise/1/">Back</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/exercise/1/">...</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="/lessons/4/">L4</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/lessons/5/">L5</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/6/">L6</a>
+    </li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/exercise/2/">Ex.2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="/lessons/5/">Next</a>
+    </li>
+  </ul>
+<hr>
+<br>
+
+
+<h3 style="text-align:center;">The Numbers</h3>
+<br>
+
+<p>&nbsp;&nbsp;&nbsp;Having learned the alphabet in Morse code, it's time to learn the numbers. This lesson is super easy if you understand the logic that the numbers are encoded into. First, the numbers in Morse code are only 10 (0, 1, 2, 3, 4, 5, 6, 7, 8, 9). If we want to create a larger number, e.g. (2.852) very simply we first write (2) then (8) and so on. </p>
+<p>&nbsp;&nbsp;&nbsp;Now let's see what happens with the code. Each number consists of 5 characters. Let's take the numbers from 1 to 5. As you will notice in the image below the numbers follow a pattern. </p>
+<br>
+
+<table class="table table-borderless table-success" style="text-align:center; font-size:170%; ">
+
+  <tbody>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;1</th>
+      <th>. - - - -</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;2</th>
+      <th>. . - - -</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;3</th>
+      <th>. . . - -</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;4</th>
+      <th>. . . . -</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;5</th>
+      <th>. . . . .</th>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<p>&nbsp;&nbsp;&nbsp;Let's split the numbers into first and second parts. As you would notice the first part is made up of dots that are equal to the number it represents. The second part consists of dashes so that they complete the five. Let's continue to the next numbers (from 6 to 0). Notice the image below...</p>
+<br>
+<table class="table table-borderless table-success" style="text-align:center; font-size:170%; ">
+
+  <tbody>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;6</th>
+      <th>- . . . .</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;7</th>
+      <th>- - . . .</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;8</th>
+      <th>- - - . .</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;9</th>
+      <th>- - - - .</th>
+    </tr>
+    <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;0</th>
+      <th>- - - - -</th>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<p>&nbsp;&nbsp;&nbsp;As you can see the pattern is similar only now they follow a different rule. The first part consists of dashes. If we add the number "5" with the set of dashes it will give us the number it represents. The second part completes the five with dots. But we have one exception. The zero (0). For zero there is no pattern. We must remember that it is 5 dashes.
+</p>
+
+
+
+<br>
+    <hr>
+  <ul class="pagination justify-content-center" >
+      <a class="page-link" href="/exercise/1/">Back</a>
+    <li class="page-item">
+      <a class="page-link" href="/lessons/5/">Next</a>
+    </li>
+  </ul>
+  <hr>
+<br>
+
+
+</div>
+
+
+
+
+
+{% endblock content %}

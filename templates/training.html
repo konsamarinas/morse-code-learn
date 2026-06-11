@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+	{% block title %}Trainning{% endblock title %}
+
+{% block content %}
+<div style="background: linear-gradient(130deg, #a4f400 30%, #d5ff7f 45%); margin-bottom: 3%; border-radius: 25px 25px 20px 20px;">
+	<div class="d-flex justify-content-center">
+		<div style="width: 100%; padding-left: 3%; padding-right: 3%; padding-top: 4%;">
+		<h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive; color:#004105;">Training</h1>
+		<br>
+
+
+
+		<h2 style="text-align:center; font-family: 'Indie Flower', cursive;"><b>How to use the trainer:</b></h2>
+		<h5 style="text-align:center; font-family: 'Indie Flower', cursive;">
+			The program displays a random word. You should try to translate the coded word into letters or vice versa.
+		</h5>
+
+		<br>
+		<br>
+		  <h2 style="text-align:center; font-family: 'Indie Flower', cursive;"><b>Choose a training level :</b></h2>
+		 <br>
+		 <br>
+			<div class="container">
+			  <div class="row align-items-start">
+			    <div class="col">
+			    	<div style="text-align: center;">
+			    		<a href="easy"><button type="button" class="btn btn-info" style="color:white; font-size:250%; font-family: 'Ribeye Marrow', cursive;">EASY</button></a>
+			    		<br>
+			    		<br>
+			    		<br>
+			    		<p style="color:#0099ff;">Small and easy words. <br>Ideal for beginner<br>to intermediate.</p>
+			    	</div>
+			      
+			    </div>
+			    <div class="col">
+			      	<div style="text-align: center;">
+			    		<a href="hard"><button type="button" class="btn btn-danger"style="font-size:250%; font-family: 'Ribeye Marrow', cursive;">HARD</button></a>
+			    		<br>
+			    		<br>
+			    		<br>
+			    		<p style="color:#cc0000;">Long words with symbols<br> and numbers. Ideal<br> for advanced users.</p>
+			    	</div>
+			      	{% for i in range(5)%}
+						<br>
+					{%endfor%}
+
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<p style="text-align:center;">Powered by: © MorseCodeLearn</p>
+	<br>
+</div>
+
+
+
+
+{% endblock content %}
+	

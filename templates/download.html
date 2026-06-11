@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Frame 1.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    </style>
+    <title>
+        {% block title %}
+        Download
+        {% endblock title %}
+    </title>
+
+</head>
+<body style="background:linear-gradient(155deg, #01adaf 20%, #04fdff 40%, #ffffff 100% );">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+    </svg>
+
+    {% include "navbar.html" %}
+
+
+    <style>
+        .centerheight {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @media only screen and (min-width: 1000px) {
+            .pageimage {width: 350px; height: 350px;}
+        }
+    </style>
+
+    <div style="background-color:rgb(236, 236, 236); padding-left:3%; padding-right:3%;">
+        <br>
+        <hr>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="centerheight">
+                      <img src="{{ url_for('static', filename='appicon.png') }}" class="img-fluid pageimage">
+                    </div>
+                </div>
+                <div class="col" style="text-align: center; background-color: rgb(216, 216, 214); border-radius: 10%; padding-top: 2%;">
+                    <div class="centerheight">
+                        <h1 style="font-family: Ribeye Marrow;">Download our Translation Mobile App</h1>
+
+                        <div id="pd_rating_holder_8974657"></div>
+                        <script type="text/javascript">
+                        PDRTJS_settings_8974657 = {
+                        "id" : "8974657",
+                        "unique_id" : "default",
+                        "title" : "",
+                        "permalink" : ""
+                        };
+                        </script>
+                        <br><br>
+                        <a href="/download/download_file/"><button type="button" class="btn btn-dark">Download (.apk) file <br> Version 1.2</button></a>
+                        <br><br>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col" style="text-align: left;">
+              <div class="centerheight">
+                <h1 style="font-family: Ribeye Marrow;">Application Description</h1>
+
+                <br>
+                <p>Morse Code Learn publishes a translation app for android mobile devices. This app is an aid to learning Morse code, but also a useful tool for someone who would like to translate code or vice versa. Additionally, when you translate text into code, you can have the translated message played back audibly. This gives you the opportunity to have an audio-visual effect because the code is transmitted by several methods. (see <a href = "/lessons/5/">Lesson 5</a>). We hope you like it. Enjoy!</p>
+              </div>
+            </div>
+              <div class="col" style="text-align: right;">
+                  <div class="centerheight">
+                    <img src="{{ url_for('static', filename='appphoto.png') }}" class="img-fluid">
+                  </div>
+              </div>
+
+          </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+        <h1 style="text-align: center; font-family: Ribeye Marrow; font-size: 300%;"><b><u>FAQ</u></b></h1>
+        <BR>
+        <div id="accordion" style="padding-left: 2%;padding-right: 2%;">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color:black;">
+                          <b>Is the application absolutely free to users?</b>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                    <div class="card-body">
+                      Yes, our app is published by Morse Code Learn and is available to everyone for any legal use. Its purpose is purely educational.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:black;">
+                          <b>Is the application also available for desktops?</b>
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body">
+                      The app is only available for android mobile devices (.apk). There are currently no plans to create a desktop app, but there may be in the future.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix" >
+                  <h5 class="mb-0" style="text-align: left;">
+                      <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color:black;">
+                        <b>Is the application completely safe?</b>
+                      </button>
+                  </h5>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    Our application is completely safe with the guarantee of Morse Code Learn. If you have any doubts about its safety, you can allow Play Protect to run a check after installing the app to make sure.
+                  </div>
+              </div>
+          </div>
+            <div class="card">
+              <div class="card-header" id="headingThree" >
+                  <h5 class="mb-0" style="text-align: left;">
+                      <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:black;">
+                        <b>My mobile security won't let me install the app.</b>
+                      </button>
+                  </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    If your mobile gives you a warning when you open the file and does not let you install it, it means that you have not turned on the installation of applications from unknown sources outside the Play store. To solve this, open <b>settings-privacy/security-unknown</b> sources.
+                  </div>
+              </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:black;">
+                      <b>Play Protect won't let me install the app.</b>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                <div class="card-body">
+                  If you get a notification from Play Protect when you press install, press the arrow below and then <b>"install anyway"</b>. If you want to make sure that the app is completely safe, play protect will show you a notification at the end that asks you if you want to scan it.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:black;">
+                    <b>How can I be notified of new updates?</b>
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+              <div class="card-body">
+                To see if there is a new update, all you have to do is come to this page and check for updates.
+              </div>
+          </div>
+      </div>
+      <br><br>
+
+
+
+        <h5 style="text-align: center; font-family: Arial;"><b>If you have any questions about installing the app, or want to report any bugs you've gotten, don't hesitate to <a href = "/contact/">contact us</a>. Pleased to help you!</b></h5>
+      </div>
+        <br>
+      </div>
+
+    {% include "footer.html"%}
+    <script type="text/javascript" charset="utf-8" src="https://polldaddy.com/js/rating/rating.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

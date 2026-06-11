@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+  {% block title %}Exercise 1 {% endblock title %}
+
+{% block content %}
+
+<br>
+
+    <h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;"><u>Exercise 1</u></h1>
+    <br>
+
+<div style="padding-left: 5%; padding-right: 5%;">
+    <h6>Your progress:  35%</h6>
+    <div class="progress" >
+     <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+    </div>
+
+ 
+    <hr>
+  <ul class="pagination justify-content-center" >
+    <li class="page-item" >
+      <a class="page-link" href="/lessons/3/">Back</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/lessons/1/">L1</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/2/">L2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/lessons/3/">L3</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="/exercise/1/">Ex.1</a>
+    </li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/4/">...</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="/lessons/4/">Next</a>
+    </li>
+  </ul>
+<hr>
+<br>
+
+
+{% if success == True%}
+
+  <div class="alert alert-success" role="alert">
+  You passed the exercise! You can continue <a href="/lessons/4/" class="alert-link">to the next lesson.</a> The word was "ADDITION".
+  </div>
+
+
+
+{% elif success == False %}
+  <div class="alert alert-danger" role="alert">
+    The word is wrong! Try again...
+  </div>
+
+{% endif %}
+
+<br>
+<h3 style="text-align:center;">It's time to solve your first exercise based on what you've learned so far.</h3>
+<br>
+
+<p>Below you can see some morse code letters. Try to translate them and write the word in the text area.</p>
+
+<br>
+
+<div style="text-align:center;">
+<img src="{{ url_for('static', filename='Group 1(1).png') }}" class="img-fluid" style="width:100%; height:100px;" >
+</div>
+<br>
+<br>
+
+<form action = "/exercise/1/" method = "POST" style="width: 100% ;, display: table; padding-left: 3%; padding-right:3%; padding-top: 4%; padding-bottom: 3%;">
+
+<textarea class="form-control" spellcheck="false" name="exercise1" id="exampleFormControlTextarea1" rows="1" placeholder="Give the anwser..." style="padding: 10px; color:#00cccc; resize: none; font-family: 'Indie Flower', cursive; font-size: 130%; overflow:hidden;  text-align: center;" ></textarea>
+    
+
+
+<br>
+<div  class="d-grid gap-2 col-8 mx-auto">
+<button type="submit" class="btn btn-success btn-lg" value = "submit" style="color: whitesmoke;"> CHECK ANWSER </button>
+</div>
+<br>
+</form>
+
+
+
+<hr>
+  <ul class="pagination justify-content-center" >
+      <a class="page-link" href="/lessons/3/">Back</a>
+    <li class="page-item">
+      <a class="page-link" href="/lessons/4/">Next</a>
+    </li>
+  </ul>
+  <hr>
+<br>
+
+
+</div>
+
+
+
+
+
+{% endblock content %}

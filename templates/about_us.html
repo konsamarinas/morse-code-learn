@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+  {% block title %}About Us{% endblock title %}
+
+{% block content %}
+
+<br>
+
+  <h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;"><u>About Us</u></h1>
+<br>
+<hr>
+<div style="padding-left: 5%; padding-right: 5%;">
+
+  <style>
+
+    @media only screen and (min-width: 1550px) {
+
+      .startimg {height: 500px; width: 70%;}
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .startimg {height: 200px; width: 100%;}
+    }
+    .centerheight {
+      position: relative; 
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+
+
+
+    @media only screen and (min-width: 1000px) {
+
+      .pageimage {width: 50%;}
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .pageimage {width: 100%;}
+    }
+  </style>
+  <br>
+
+  <div style="text-align: center;">
+    <img src="{{ url_for('static', filename='Frame 1.png') }}" class="img-fluid" alt="avatar" style="width:30%;">
+    <br>
+    <br>
+    <h1 class="font-weight-bold" style="text-align:center; font-size: 200%; font-family: 'Ribeye Marrow', cursive;">Morse Code Learn</h1>
+    <br>
+    <p>&nbsp; &nbsp; &nbsp; &nbsp;Morse Code Learn is an amateur and completely free website dedicated to Morse Code. The website covers all the needs one might have regarding code. That is, the visitor has the opportunity to learn the code, solve exercises and practice his skills on this part. Our page is divided into 3 areas. <a href="/learning/">Learning,</a> <a href="/training/">training</a>  and the tool of <a href="/translete/">translation</a> . Learning is a category that teaches you ways to memorize code and how to use/write it. There are 6 lessons where every three lessons there is an exercise. In addition to learning there is a category called training. Here you can practice your coding skills on either easy or hard level. Last but not least is the translation part. Our website offers you an excellent Morse code translator that allows you to translate Morse code to English text and vice versa.</p>
+
+  </div>
+  <br>
+  <br>
+</div>
+
+
+{% endblock content %}

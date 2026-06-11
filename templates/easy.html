@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+	{% block title %}Easy Training{% endblock title %}
+
+{% block content %}
+<head>
+	<script type="text/javascript">
+        function preventBack() {
+            window.history.forward(); 
+        }
+          
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+    </script>
+</head>
+
+
+		<div class="d-flex justify-content-center">
+		<div style="width: 100%; padding-left: 3%; padding-right: 3%; padding-top: 4%;">
+		<h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive; color:#00bfff;">Training <b><u >EASY</u><b></h1>
+		<hr>
+
+		<div style="background: linear-gradient(130deg, #a4f400 30%, #d5ff7f 45%); margin-bottom: 3%; border-radius: 15px 50px; ">
+
+
+
+
+
+		<br>
+		<h4 style="text-align:center;">What does this word <br> <b style="font-size:150%; color: #00cdcd;">{{code}}</b> <br>mean?</h4>
+
+
+		<form action = "/training/easy/" method = "POST" style="width: 100% ;, display: table; padding-left: 3%; padding-right:3%; padding-top: 4%; padding-bottom: 3%;">
+
+
+
+  			<textarea class="form-control" spellcheck="false" name="wordtextarea" id="exampleFormControlTextarea1" rows="1" placeholder="Try to translate the word above..." style="padding: 10px; color:#00cccc; resize: none; font-family: 'Indie Flower', cursive; font-size: 130%; overflow:hidden;  text-align: center;" ></textarea>
+		
+
+
+
+	<br>
+			<div class="container">
+  				<div class="row">
+    				<div class="col" style="text-align:right;">
+      					<button type="submit" class="btn btn-info btn-lg" value = "submit" style="color: whitesmoke; "> CHECK ANWSER </button>
+    				</div>
+    			</form>
+    				<div class="col" style="text-align:left;">
+      					<a href = "/training/easy/"class="btn btn-secondary btn-lg"  role="button" style="color:white;">OTHER WORD</a>
+    				</div>
+  				</div>
+			</div>
+		<br>
+</form>
+</div>
+</b>
+</b>
+</h1>
+<br>
+<br>
+<p style="text-align:center;">Powered by: © MorseCodeLearn</p>
+</div>
+</div>
+
+
+
+
+
+		  
+
+{% endblock content %}

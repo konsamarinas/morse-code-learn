@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+
+  {% block title %}Lesson 1 - The first 7 easiest symbols{% endblock title %}
+
+{% block content %}
+
+<br>
+
+    <h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;"><u>Lesson 1</u></h1>
+    <br>
+
+<div style="padding-left: 5%; padding-right: 5%;">
+    <h6>Your progress:  0%</h6>
+    <div class="progress" >
+     <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 1%"></div>
+    </div>
+
+ 
+    <hr>
+  <ul class="pagination justify-content-center" >
+    <li class="page-item disabled" >
+      <a class="page-link">Back</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="/lessons/1/">L1</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/2/">L2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/lessons/3/">L3</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/exercise/1/">Ex.1</a>
+    </li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/4/">...</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="/lessons/2/">Next</a>
+    </li>
+  </ul>
+<hr>
+<br>
+
+
+<h3 style="text-align:center;">The first 7 easiest symbols.</h3>
+<br>
+
+<p>In this lesson we will look at our first symbols in Morse code which are extremely easy. These symbols consist of either dots or dashes only. In more detail, what you must remember is the series of letters <b> E I S H</b> and <b>T M O</b>.</p><p> <b>E I S H</b> take dots and <b>T M O</b> take dashes.</p>
+
+<br>
+
+<table class="table">
+  <thead>
+    <tr>
+
+      <th scope="col">Letters</th>
+      <th scope="col">Sympol</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E I S H</td>
+      <td>Dots</td>
+    </tr>
+    <tr>
+      <td>T M O</td>
+      <td>Dashes</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<p><u>How to find the symbols:</u> We start with a dot for EISH and with a dash for TMO. As we move according to the order of the letters we add one more symbol at a time. So E is one dot, I is two dots, S is three dots e.t.c. Look the following picture ....
+</p>
+
+<br>
+
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+
+      <th scope="col">EISH</th>
+      <th scope="col"></th>
+      <th scope="col">TMO</th>
+      <th scope="col"></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E</td>
+      <td>.</td>
+      <td>T</td>
+      <td>_</td>
+    </tr>
+
+    <tr>
+      <td>I</td>
+      <td>. .</td>
+      <td>M</td>
+      <td>_  _</td>
+    </tr>
+
+    <tr>
+      <td>S</td>
+      <td>. . .</td>
+      <td>O</td>
+      <td>_  _  _</td>
+    </tr>
+
+    <tr>
+      <td>H</td>
+      <td>. . . .</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+
+
+
+  </tbody>
+</table>
+
+<br>
+
+    <hr>
+  <ul class="pagination justify-content-center" >
+    <li class="page-item disabled" >
+      <a class="page-link">Back</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="/lessons/2/">Next</a>
+    </li>
+  </ul>
+  <hr>
+<br>
+
+
+</div>
+
+
+
+
+
+{% endblock content %}

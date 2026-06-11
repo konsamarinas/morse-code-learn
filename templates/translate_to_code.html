@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+	{% block title %}Translator{% endblock title %}
+
+
+	{% block content %}
+
+	<form action = "/translation/" method = "POST" style=" width: 100%;display: table;  padding-left: 3%; padding-right:3%; padding-top: 4%; padding-bottom: 3%;">
+  		<div class="mb-3">
+  			<h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;">Morse Code Translator</h1>
+<br>
+						   
+
+</div>
+
+
+
+			{%if var_warning == True:%}
+					<div class="alert alert-warning" role="alert">
+					<div class="row">
+					  <div class="col-8">Your text is empty. Write some letters first...</div>
+					  <div class="col-4">  <div style="text-align:right;">
+					    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					  </div></div>
+					</div>
+				</div>
+			{%endif%}
+
+  			<div style="background-color: #ccffbb;">
+						<br>
+
+						<div class="container">
+						  <div class="row">
+						    <div class="col-lg">
+						      Now you can write <b style="color: darkgreen;">letters</b> and translate it <b style="color: darkgreen;">to morse code</b>. 
+						    </div>
+
+
+						    <div class="col-md-auto">
+						           <div>
+										    <a href="/translate/" class="btn btn-success btn-sm active" role="button" aria-pressed="true">CHANGE</a>
+										  </div>
+
+
+
+						    </div>
+						  </div>
+						</div>
+
+						<br>
+
+					</div>
+<br>
+  			<textarea class="form-control" spellcheck="false" name="translation" id="exampleFormControlTextarea1" rows="15" placeholder="Write text here..." style="padding: 10px; color: darkgreen;resize: none; font-family: 'Indie Flower', cursive; font-size: 150%;" ></textarea>
+		
+	<br>
+
+		<div  class="d-grid gap-2 col-8 mx-auto">
+		<button type="submit" class="btn btn-secondary btn-lg" value = "submit">- - TRANSLATION - -</button>
+		<br>
+		<br>
+
+		</div>
+	</form>
+
+</div>
+
+
+{% endblock content %}
+	

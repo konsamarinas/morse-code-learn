@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <div class="container-fluid" style="padding-left: 8%; padding-right: 5%;">
+
+    <a class="navbar-brand" href="/home/">
+    <img src="{{ url_for('static', filename='Frame 1.png') }}" width="40" height="40" alt="" >
+    </a>
+    <a class="navbar-brand"  style="padding-right: 0.5%; padding-left: 1%;" >Morse Code Learn</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/home/" style="padding-right: 10px;">Home</a>
+
+                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            Lessons
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #212529; border: 5px;" >
+            <li><a class="dropdown-item" href="/lessons/1/" style="color: #9a9c9e;">Lesson 1</a></li>
+            <li><a class="dropdown-item" href="/lessons/2/" style="color: #9a9c9e;">Lesson 2</a></li>
+            <li><a class="dropdown-item" href="/lessons/3/" style="color: #9a9c9e;">Lesson 3</a></li>
+            <li><a class="dropdown-item" href="/exercise/1/" style="color: #9a9c9e;">Exercise 1</a></li>
+            <li><a class="dropdown-item" href="/lessons/4/" style="color: #9a9c9e;">Lesson 4</a></li>
+            <li><a class="dropdown-item" href="/lessons/5/" style="color: #9a9c9e;">Lesson 5</a></li>
+            <li><a class="dropdown-item" href="/lessons/6/" style="color: #9a9c9e;">Lesson 6</a></li>
+            <li><a class="dropdown-item" href="/exercise/2/" style="color: #9a9c9e;">Exercise 2</a></li>
+          </ul>
+        </li>
+        <a class="nav-link" href="/translate/">Translator</a>
+        <a class="nav-link" href="/training/">Training</a>
+        <a class="nav-link" href="/history/">History</a>
+        <a class="nav-link" href="/dictionary/">Dictionary</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            About Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #212529; border: 5px;" >
+            <li><a class="dropdown-item" href="/about_us/" style="color: #9a9c9e;">Info</a></li>
+            <li><a class="dropdown-item" href="/contact/" style="color: #9a9c9e;">Contact</a></li>
+          </ul>
+        </li>
+        <a class="nav-link" href="/download/">Download</a>
+
+      </div>
+    </div>
+  </div>
+</nav>

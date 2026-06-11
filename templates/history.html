@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+  {% block title %}The History of Morse Code{% endblock title %}
+
+{% block content %}
+<style>
+	.centerheight {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+
+	}
+
+
+
+	@media only screen and (min-width: 1000px) {
+
+		.pageimage {width: 80%; height: 80%;}
+	}
+
+
+
+	@media only screen and (max-width: 600px) {
+
+		.pageimage {width: 100%;}
+	}
+</style>
+
+
+<br>
+<h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;"><u>The History of Morse Code</u></h1>
+<br>
+<hr>
+<br>
+
+<div style="padding-left: 5%; padding-right: 5%;">
+    <div class="row">
+        <div class="col-8">
+            <p class="centerheight" style="font-size: 120%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since ancient times, people have found
+                ways to communicate with each other from
+                afar. The first form of communication was
+                <b>phryctoriae</b>, a system of communication with
+                fires burning on selected mountain tops. In
+                this way the Achaeans conveyed the message
+                that Troy had fallen, lighting fires from peak
+                to peak starting from Troy and reaching
+                Mycenae.</p>
+
+        </div>
+        <div class="col-4" style="text-align: right;">
+            <img src="{{ url_for('static', filename='history1.jpg') }}" class="img-fluid centerheight pageimage" alt="avatar" style="border-radius: 50%;">
+        </div>
+    </div>
+
+    <br>
+
+
+    <div class="row">
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='history2.jpg') }}" class="img-fluid centerheight pageimage" alt="avatar" style="border-radius: 50%;">
+        </div>
+
+        <div class="col-8">
+            <p class="centerheight" style="font-size: 120%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since then, communications have gone
+                through many stages. In the mid-19th
+                century, Samuel F. B. Morse managed to
+                connect Washington, D.C. to Baltimore with
+                a wire that carried the <b>Morse code</b> of dots
+                (a short sound wave) and dashes (a long
+                sound wave). Communications evolved
+                rapidly, yet there was one limitation
+                pending: the wire. Two neighboring cities
+                could be connected by means of wires. The connection of two distant
+                cities or even countries would require huge projects since the length of
+                the wire would have to be thousands of miles long. As far as
+                intercontinental communication is concerned, the wire method would
+                be literally impossible.</p>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-8">
+            <p class="centerheight" style="font-size: 120%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The problem was solved at the beginning
+                of the 20th century when the Italian Marquis
+                <b>Guglielmo Marconi</b> sent the letter “S” from
+                England to Canada through <b>radio waves</b>, an
+                intangible carrier.
+                Over the years the
+                possibilities of communication have exceeded
+                all imagination with Morse Code becoming
+                more and more common.</p>
+
+        </div>
+        <div class="col-4" style="text-align: right;">
+            <img src="{{ url_for('static', filename='history3.jpg') }}" class="img-fluid centerheight pageimage" alt="avatar" style="border-radius: 50%;">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='history4.jpg') }}" class="img-fluid centerheight pageimage" alt="avatar" style="border-radius: 50%;">
+        </div>
+
+        <div class="col-8">
+            <p class="centerheight" style="font-size: 120%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morse code named after its
+                American inventor <b>Samuel Finley Breese
+                Morse</b> (1791-1872), is a communication
+                system consisting purely of <b>dots</b> and
+                <b>dashes</b> with the dash being 3 times
+                longer than the dot. Alphabet coding
+                was first used in 1837. Morse studied
+                the letters of the alphabet and noticed
+                that “<b>E</b>” and “<b>T</b>” were used most often.
+                That's why he decided to code E with a
+                dot and T with a dash. The letters <b>A, O, I, S, N </b>followed and then the
+                remaining letters, as well as numbers with their corresponding symbols
+                with more complex combinations.</p>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-8">
+            <p class="centerheight" style="font-size: 120%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The code was first used in wired telegraphy along with the
+                invention of the <b>telegraph</b> by Morse himself and later in <b>wireless
+                telegraphy</b>, along with the discovery of radio communications. When
+                using visual or audio symbols, the exact durations of the symbols and
+                pauses must be observed so that they are easily read by the recipient.</p>
+
+        </div>
+        <div class="col-4" style="text-align: right;">
+            <img src="{{ url_for('static', filename='history5.jpg') }}" class="img-fluid centerheight pageimage" alt="avatar" style="border-radius: 50%;">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='history6.jpg') }}" class="img-fluid centerheight pageimage" alt="avatar" style="border-radius: 50%;">
+        </div>
+
+        <div class="col-8">
+            <p class="centerheight" style="font-size: 120%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Morse code symbols are transmitted
+                either audibly or visually. Sounds can be
+                transmitted via the telegraph or even by
+                striking an object. The usual mode of
+                visual transmission at sea is the <b>Aldis
+                Lamp</b>, a lamp with a range of 8 miles.
+                Other ways of morse code transmission
+                are written symbols, transmission through one or two flags, with
+                flashlight signals, etc.</p>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <h5 style="text-align: right;"><i>Written by Samarinas Konstantinos</i></h5>
+    <h5 style="text-align: right;"><i>Morse Code Learn</i></h5>
+    <br>
+    <p style="font-size: 50%;">Images by: Greek High Definition, National Museum of American History, Shortpedia, TIME, ThoughtCo, Ebay</p>
+</div>
+
+
+
+{% endblock content %}

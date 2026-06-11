@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+  {% block title %}Translation{% endblock title %}
+{% block content %}
+
+<div class="d-flex justify-content-center" >
+<div style="width: 100%; padding-left:3%; padding-right: 3%; padding-top: 4%; padding-bottom: 3%;">
+<h1 class="font-weight-bold" style="text-align:center; font-size: 350%; font-family: 'Ribeye Marrow', cursive;">Translation</h1>
+<br>
+
+
+{% if to_code == False %}
+  <div class="alert alert-success" role="alert">
+  <div class="row">
+    <div class="col-8">SUCCESS: Your morse code text does not have mistakes!</div>
+    <div class="col-4">  <div style="text-align:right;">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div></div>
+  </div>
+    
+
+  </div>
+
+  <h5 style="text-align:center;"> Your morse code text in letters:</h5>
+
+  <p class="text-justify">
+      
+  </p>
+  <div style=" background-color:  #eaecee ;">
+  <br>
+  <div style="word-break: break-all;">
+    <p class="text-justify" style="text-align: center ; font-family: 'Indie Flower', cursive; font-size: 150%;">
+  
+        {{result}}
+  
+  
+    </p>
+  
+  </div>
+  <br>
+      <div  class="d-grid gap-2 col-8 mx-auto">
+      <a href="/translate/"type="submit" class="btn btn-secondary btn-lg">←  BACK</a>
+      </div>
+{%else%}
+
+  <div class="alert alert-success" role="alert">
+  <div class="row">
+    <div class="col-8">SUCCESS: Your text does not have mistakes!</div>
+    <div class="col-4">  <div style="text-align:right;">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div></div>
+  </div>
+    
+
+  </div>
+
+  <h5 style="text-align:center;"> Your text in morse code:</h5>
+
+  <p class="text-justify">
+      
+  </p>
+  <div style=" background-color:  #eaecee ; ">
+  <br>
+  <div style="word-break: break-all;">
+  <p class="text-justify" style="text-align: center ; font-family: 'Indie Flower', cursive; font-size: 150%;">
+
+      {{result}}
+
+
+  </p>
+
+  </div>
+  <br>
+      <div  class="d-grid gap-2 col-8 mx-auto">
+      <a href="/translate_to_code/"type="submit" class="btn btn-secondary btn-lg">←  BACK</a>
+      </div>
+
+
+{%endif%}
+<br>
+</div>
+</div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+  {% block title %}Lesson 3 - Symmetrical symbols and the last letters{% endblock title %}
+
+{% block content %}
+
+<br>
+
+    <h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;"><u>Lesson 3</u></h1>
+    <br>
+
+<div style="padding-left: 5%; padding-right: 5%;">
+    <h6>Your progress:  27%</h6>
+    <div class="progress" >
+     <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 27%"></div>
+    </div>
+
+ 
+    <hr>
+  <ul class="pagination justify-content-center" >
+    <li class="page-item" >
+      <a class="page-link" href="/lessons/2/">Back</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/lessons/1/">L1</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/2/">L2</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="/lessons/3/">L3</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/exercise/1/">Ex.1</a>
+    </li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/4/">...</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="/exercise/1/">Next</a>
+    </li>
+  </ul>
+<hr>
+<br>
+
+
+<h3 style="text-align:center;">Symmetrical symbols and the last letters.</h3>
+<br>
+
+<p>One more lesson left to complete the english alphabet. In this lesson we will learn 6 more letters. Let’s start with symmetrical symbols. We have 3 symbols that if we place an axis of symmetry in the middle, we will notice that they are symmetrical to each other. These symbols are: K, P and R.</p>
+
+<br>
+
+<div style="text-align:center;">
+<img src="{{ url_for('static', filename='symmetry.png') }}" class="img-fluid" style="width:100%; height:400px;" >
+</div>
+
+
+
+<br>
+<p>And here we have the last 3 symbols left that do not follow any rule. These symbols are: C, J and Z.
+</p>
+
+<br>
+
+<table class="table table-hover" style="text-align: center; color:#008080;">
+  <thead>
+    <tr>
+      <th>LETTER</th>
+      <th>SYMBOL</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+    <tr>
+      <td>C</td>
+      <td>-.-.</td>
+    </tr>
+
+    <tr>
+      <td>J</td>
+      <td>.---</td>
+    </tr>
+
+    <tr>
+      <td>Z</td>
+      <td>--..</td>
+    </tr>
+
+  </tbody>
+</table>
+<br>
+    <hr>
+  <ul class="pagination justify-content-center" >
+      <a class="page-link" href="/lessons/2/">Back</a>
+    <li class="page-item">
+      <a class="page-link" href="/exercise/1/">Next</a>
+    </li>
+  </ul>
+  <hr>
+<br>
+
+
+</div>
+
+
+
+
+
+{% endblock content %}

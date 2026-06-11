@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/home/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/translate/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/lessons/1/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/training/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/dictionary/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/about_us/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/contact/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/training/easy/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/training/hard/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/history/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://morsecodelearn.pythonanywhere.com/download/</loc>
+	<lastmod>2023-05-23T21:49:51+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>

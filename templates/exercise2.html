@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+  {% block title %}Exercise 2 {% endblock title %}
+
+{% block content %}
+
+<br>
+
+    <h1 class="font-weight-bold" style="text-align:center; font-size: 300%; font-family: 'Ribeye Marrow', cursive;"><u>Exercise 2</u></h1>
+    <br>
+
+<div style="padding-left: 5%; padding-right: 5%;">
+    {%if success == True%}
+      <h6>Your progress:  100%</h6>
+      <div class="progress" >
+       <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+      </div>
+    {% else %}
+      <h6>Your progress:  93%</h6>
+      <div class="progress" >
+       <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 93%"></div>
+      </div>
+    {%endif%}
+ 
+    <hr>
+  <ul class="pagination justify-content-center" >
+    <li class="page-item" >
+      <a class="page-link" href="/lessons/6/">Back</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/exercise/1/">...</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/4/">L4</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="/lessons/5/">L5</a></li>
+    <li class="page-item" aria-current="page">
+      <a class="page-link" href="/lessons/6/">L6</a>
+    </li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="/exercise/2/">Ex.2</a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link">Next</a>
+    </li>
+  </ul>
+<hr>
+<br>
+
+
+{% if success == True%}
+
+  <div class="alert alert-success" role="alert"><h6 style="text-align: center;">
+  You passed the course!</h6><br>&nbsp;&nbsp;&nbsp;Congratulations! You have successfully completed learning Morse code. Of course, the code doesn't end here either. There are also symbols for letters from other countries that are not included in the English alphabet, but also symbols that are used exclusively for telecommunications. But this should not concern you because they are very rare. You have reached a very high level where you are able to communicate in Morse code. Well done!
+  </div>
+
+
+
+{% elif success == False %}
+  <div class="alert alert-danger" role="alert">
+    The translation is wrong! If you believe that you are right, make sure you don't use unnecessary characters (e.g. unnecessary spaces, enter etc.) and try again... 
+  </div>
+
+{% endif %}
+<!-- <h5>&nbsp;&nbsp;&nbsp;</h5> -->
+<br>
+<h3 style="text-align:center;">One exercise left to finish this series of Morse code lessons.</h3>
+<br>
+
+<p>Below you can see a text in morse code. Try to translate it in the text area.</p>
+
+<br>
+
+<div style="text-align:center; background-color:#ccffcc;">
+<br>
+<h2>-/...././ /.../-/..-/-.././-./-/ /-/---/.-../-../ /-/...././ /-/./.-/-.-./...././.-./ /-/..../.-/-/ /..---/---../--..--/--.../.-.-./...../.----/--..--/...--/-...-/---../-----/.-.-.-/ /...././ /.-/-./.../.--/./.-././-../ /..../../--/---.../ /.--/./.-../.-../ /-../---/-././-.-.--</h2>
+<br>
+</div>
+<br>
+<br>
+
+<form action = "/exercise/2/" method = "POST" style="width: 100% ;, display: table; padding-left: 3%; padding-right:3%; padding-top: 4%; padding-bottom: 3%;">
+
+<textarea class="form-control" spellcheck="false" name="exercise2" id="exampleFormControlTextarea1" rows="2" placeholder="Translate the text..." style="padding: 10px; color:#00cccc; resize: none; font-family: 'Indie Flower', cursive; font-size: 130%; overflow:hidden;  text-align: center;" ></textarea>
+    
+
+
+<br>
+<div  class="d-grid gap-2 col-8 mx-auto">
+<button type="submit" class="btn btn-success btn-lg" value = "submit" style="color: whitesmoke;"> CHECK ANWSER </button>
+</div>
+<br>
+</form>
+
+
+
+<hr>
+  <ul class="pagination justify-content-center" >
+      <a class="page-link" href="/lessons/6/">Back</a>
+    <li class="page-item disabled">
+      <a class="page-link">Next</a>
+    </li>
+  </ul>
+  <hr>
+<br>
+
+
+</div>
+
+
+
+
+
+{% endblock content %}
