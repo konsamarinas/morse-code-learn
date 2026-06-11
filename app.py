@@ -2,9 +2,10 @@ from flask import Flask, render_template, request, redirect, session, send_from_
 import mydict, random
 from random import randint
 
+import os
 
 app = Flask(__name__)
-app.secret_key = 'J$9a8*VgRm#fLp$5hQ7yT!sN3eX6wB4dO0Zu1cE2iGv'
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 @app.route("/home/")
