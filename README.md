@@ -2,7 +2,7 @@
 
 A Flask-based interactive web application for learning Morse code through translation, practice exercises, and training modes.
 
-🌐 Live Demo: https://morse-code-learn.onrender.com
+🌐 Live Demo: https://morsecodelearn.onrender.com/
 
 ---
 
